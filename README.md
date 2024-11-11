@@ -4,11 +4,9 @@
 
 
 XinSu Branch Update:
-1.  EDA focus on family types, the trend of the sales for different family types.
+1.  EDA: Sales Trends by Family Types
 2.  Major findings:
 
-    (1) There are missing data in the following catogories:
-        Baby care, Books, Celebration Transactions, Home and Kitchen I, Home and Kitchen II, Home Care, LadiesWear, Magazine, Pet Supplies, Players
-        and Electronics,Produce, School and Office Supplies,
+    (1)Missing data identified in the following categories: Baby Care, Books, Celebration Transactions, Home & Kitchen I, Home & Kitchen II, Home Care, Ladieswear, Magazines, Pet Supplies, Electronics, Produce, and School & Office Supplies.
     
-    (2) There is unusual spike around July 2016.
+    (2) Unusual spike observed around July 2016.
