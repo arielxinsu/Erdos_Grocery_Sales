@@ -39,3 +39,12 @@ Thurs Nov 14 2024  Fernando Liu Lopez <fcl2@rice.edu>
 # Sample Section <a name="section"></a>
 
 ## Subsection <a name="subsection"></a>
+
+
+# XinSu Branch Update:
+1.  EDA: Sales Trends by Family Types
+2.  Major findings:
+
+    (1)Missing data identified in the following categories: Baby Care, Books, Celebration Transactions, Home & Kitchen I, Home & Kitchen II, Home Care, Ladieswear, Magazines, Pet Supplies, Electronics, Produce, and School & Office Supplies.
+    
+    (2) Unusual spike observed around July 2016.
