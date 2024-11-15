@@ -11,6 +11,7 @@
 
 # Changelog <a name="chagelog"></a>
 Tues Nov 03 2024  Fernando Liu Lopez <fcl2@rice.edu>
+
     * Master: created Master folder to consolidate all our results and clean notebooks
 
     * Master/1. Data Collection and Preliminary Analysis.ipynb: lists our sources and initial observations of our data sets
@@ -32,7 +33,7 @@ Thurs Nov 14 2024  Fernando Liu Lopez <fcl2@rice.edu>
 
     * Data/merged_train_alt.csv: alternative training set with all 3 million rows but some missing values.
 
-    * Master/3. EDA.ipynb: created notebook to contain EDA, visuals, and other findings
+    * Master/3. EDA.ipynb: created notebook to contain EDA, visuals, and other findings. populated notebook with some visuals.
 
 
 # Sample Section <a name="section"></a>
