@@ -1,10 +1,13 @@
 # Erdos_Grocery_Sales
 
 # Table of contents
-1. [Project Description](#introduction)
-2. [Changelog](#changelog)
-3. [Sample Section](#section)
-    1. [Subsection](##subsection)
+- [Erdos\_Grocery\_Sales](#erdos_grocery_sales)
+- [Table of contents](#table-of-contents)
+- [Project Description ](#project-description-)
+- [Changelog ](#changelog-)
+- [Sample Section ](#sample-section-)
+  - [Subsection ](#subsection-)
+- [XinSu Branch Update:](#xinsu-branch-update)
 
 # Project Description <a name="description"></a>
 
@@ -35,6 +38,12 @@ Thurs Nov 14 2024  Fernando Liu Lopez <fcl2@rice.edu>
 
     * Master/3. EDA.ipynb: created notebook to contain EDA, visuals, and other findings. populated notebook with some visuals.
 
+Sun Nov 17 2024 Dongyu 
+
+    * Master/2. Clearning.ipynb: added a new data set X_new, fixed the "transferred" error, excluded event from "national holidays" and set event as a separate column. 
+    * Master/holidays.ipynb: copied the holiday script to main branches. Will update to the EDA notebook once completed. 
+
+
 
 # Sample Section <a name="section"></a>
 
@@ -48,3 +57,6 @@ Thurs Nov 14 2024  Fernando Liu Lopez <fcl2@rice.edu>
     (1)Missing data identified in the following categories: Baby Care, Books, Celebration Transactions, Home & Kitchen I, Home & Kitchen II, Home Care, Ladieswear, Magazines, Pet Supplies, Electronics, Produce, and School & Office Supplies.
     
     (2) Unusual spike observed around July 2016.
+
+
+
