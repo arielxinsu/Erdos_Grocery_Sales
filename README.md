@@ -1,12 +1,29 @@
-# Erdos_Grocery_Sales
-
 # Table of contents
-1. [Project Description](#introduction)
-2. [Changelog](#changelog)
-3. [Sample Section](#section)
-    1. [Subsection](##subsection)
+- [Table of contents](#table-of-contents)
+- [Executive Summary ](#executivesummary-)
+    - [Project Description ](#description-)
+    - [Data Collection ](#datacollection-)
+    - [Model Selection ](#modelselection-)
+    - [KPIs ](#kpi-)
+    - [Results ](#results-)
+- [Changelog ](#changelog-)
+- [XinSu Branch Update:](#xinsu-branch-update)
 
-# Project Description <a name="description"></a>
+
+# Executive Summary  <a name="executivesummary"></a>
+
+## Project Description <a name="description"></a>
+Our primary aim is to predict unit sales for families of products sold at 52 Favorita grocery stores in Ecuador. 
+
+## Data Collection <a name="datacollection"></a>
+
+## Model Selection <a name="modelselection"></a>
+
+## KPIs <a name="kpi"></a>
+
+## Results <a name="results"></a>
+
+
 
 
 # Changelog <a name="chagelog"></a>
@@ -35,10 +52,17 @@ Thurs Nov 14 2024  Fernando Liu Lopez <fcl2@rice.edu>
 
     * Master/3. EDA.ipynb: created notebook to contain EDA, visuals, and other findings. populated notebook with some visuals.
 
+Sun Nov 17 2024 Dongyu 
 
-# Sample Section <a name="section"></a>
+    * Master/2. Clearning.ipynb: added a new data set X_new, fixed the "transferred" error, excluded event from "national holidays" and set event as a separate column. 
+    * Master/holidays.ipynb: copied the holiday script to main branches. Will update to the EDA notebook once completed. 
 
-## Subsection <a name="subsection"></a>
+Thurs Nov 21 2024  Fernando Liu Lopez <fcl2@rice.edu>
+
+    * Master/2. Cleaning (version 2).ipynb: cleaned up reading notebook, added merged testing set
+    * Master/3. EDA.ipynb added more visuals
+
+
 
 
 # XinSu Branch Update:
@@ -48,3 +72,6 @@ Thurs Nov 14 2024  Fernando Liu Lopez <fcl2@rice.edu>
     (1)Missing data identified in the following categories: Baby Care, Books, Celebration Transactions, Home & Kitchen I, Home & Kitchen II, Home Care, Ladieswear, Magazines, Pet Supplies, Electronics, Produce, and School & Office Supplies.
     
     (2) Unusual spike observed around July 2016.
+
+
+
