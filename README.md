@@ -1,15 +1,31 @@
-# Erdos_Grocery_Sales
-
 # Table of contents
-- [Erdos\_Grocery\_Sales](#erdos_grocery_sales)
+
 - [Table of contents](#table-of-contents)
-- [Project Description ](#project-description-)
+- [Executive Summary ](#executivesummary-)
+    - [Project Description ](#description-)
+    - [Data Collection ](#datacollection-)
+    - [Model Selection ](#modelselection-)
+    - [KPIs ](#kpi-)
+    - [Results ](#results-)
 - [Changelog ](#changelog-)
-- [Sample Section ](#sample-section-)
-  - [Subsection ](#subsection-)
 - [XinSu Branch Update:](#xinsu-branch-update)
 
-# Project Description <a name="description"></a>
+
+# Executive Summary  <a name="executivesummary"></a>
+
+## Project Description <a name="description"></a>
+Our primary aim is to predict unit sales for families of products sold at 52 Favorita grocery stores in Ecuador. 
+
+## Data Collection <a name="datacollection"></a>
+
+## Model Selection <a name="modelselection"></a>
+
+## KPIs <a name="kpi"></a>
+
+## Results <a name="results"></a>
+
+
+
 
 
 # Changelog <a name="chagelog"></a>
@@ -44,10 +60,15 @@ Sun Nov 17 2024 Dongyu
     * Master/holidays.ipynb: copied the holiday script to main branches. Will update to the EDA notebook once completed. 
 
 
+Thurs Nov 21 2024  Fernando Liu Lopez <fcl2@rice.edu>
 
-# Sample Section <a name="section"></a>
+    * Master/2. Cleaning (version 2).ipynb: cleaned up reading notebook, added merged testing set
+    * Master/3. EDA.ipynb added more visuals
 
-## Subsection <a name="subsection"></a>
+
+
+
+
 
 
 # XinSu Branch Update:
