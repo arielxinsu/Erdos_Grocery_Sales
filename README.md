@@ -1,4 +1,5 @@
 # Table of contents
+
 - [Table of contents](#table-of-contents)
 - [Executive Summary ](#executivesummary-)
     - [Project Description ](#description-)
@@ -22,6 +23,7 @@ Our primary aim is to predict unit sales for families of products sold at 52 Fav
 ## KPIs <a name="kpi"></a>
 
 ## Results <a name="results"></a>
+
 
 
 
@@ -57,10 +59,14 @@ Sun Nov 17 2024 Dongyu
     * Master/2. Clearning.ipynb: added a new data set X_new, fixed the "transferred" error, excluded event from "national holidays" and set event as a separate column. 
     * Master/holidays.ipynb: copied the holiday script to main branches. Will update to the EDA notebook once completed. 
 
+
 Thurs Nov 21 2024  Fernando Liu Lopez <fcl2@rice.edu>
 
     * Master/2. Cleaning (version 2).ipynb: cleaned up reading notebook, added merged testing set
     * Master/3. EDA.ipynb added more visuals
+
+
+
 
 
 
