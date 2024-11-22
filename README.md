@@ -65,7 +65,9 @@ Thurs Nov 21 2024  Fernando Liu Lopez <fcl2@rice.edu>
     * Master/2. Cleaning (version 2).ipynb: cleaned up reading notebook, added merged testing set
     * Master/3. EDA.ipynb added more visuals
 
+Fri Nov 22 2024  Maksim Kosmakov, Fernando Liu Lopez <fcl2@rice.edu>
 
+    * Master/4. Baseline Models.ipynb: added notebook with baseline models. This is a copy of Maksim's baseline-models.ipynb notebook, with minor edits.
 
 
 
