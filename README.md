@@ -1,12 +1,12 @@
 # Table of contents
 
 - [Table of contents](#table-of-contents)
-- [Executive Summary ](#executivesummary-)
-    - [Project Description ](#description-)
-    - [Data Collection ](#datacollection-)
-    - [Model Selection ](#modelselection-)
-    - [KPIs ](#kpi-)
-    - [Results ](#results-)
+- [Executive Summary  ](#executive-summary--)
+  - [Project Description ](#project-description-)
+  - [Data Collection ](#data-collection-)
+  - [Model Selection ](#model-selection-)
+  - [KPIs ](#kpis-)
+  - [Results ](#results-)
 - [Changelog ](#changelog-)
 - [XinSu Branch Update:](#xinsu-branch-update)
 
@@ -24,7 +24,8 @@ Our primary aim is to predict unit sales for families of products sold at 52 Fav
 
 ## Results <a name="results"></a>
 
-
+- data_visual_GUI.py creates an interactive GUI to check the train and test data for the choosen store and family type. 
+  - To activate the GUI, use 'python data_visual_GUI.py'
 
 
 
