@@ -8,8 +8,6 @@
   - [KPIs](#kpis)
   - [Results](#results)
   - [Repository structure](#Repository-structure)
-- [Changelog](#changelog)
-- [XinSu Branch Update](#xinsu-branch-update)
 
 ---
 
