@@ -7,7 +7,7 @@
   - [Model Selection](#model-selection)
   - [KPIs](#kpis)
   - [Results](#results)
-  - [Repository structure] (#Repository Structure)
+  - [Repository structure](#Repository-structure)
 - [Changelog](#changelog)
 - [XinSu Branch Update](#xinsu-branch-update)
 
@@ -95,19 +95,6 @@ The **RMSLE** metric is crucial because it penalizes large errors more heavily t
 
 ---
 
-## Dataset Structure
-The dataset is organized into two main folders:
-
-- **Data**: Contains the original dataset and the cleaned, preprocessed data.
-  - **competition_data**: This folder holds the original data provided by Kaggle, including the `train.csv`, `test.csv`, `oil.csv`, `stores.csv`, `holidays_events.csv`, and other related files.
-  - **processed_data**: Contains the cleaned and merged data after preprocessing steps, which are ready for model training.
-
-- **Master**: The main folder for code, models, and exploratory data analysis.
-  - **Cleaning**: This folder includes notebooks and scripts used to preprocess and clean the raw data.
-  - **EDA**: This folder contains exploratory data analysis notebooks and scripts to understand the data and derive insights.
-  - **Models**: This folder stores the trained models, including the baseline models (e.g., Random Forest Regressor) and any other custom models developed for the competition.
-
----
 
 ## Repository Structure
 
