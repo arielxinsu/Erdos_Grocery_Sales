@@ -1,3 +1,104 @@
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Executive Summary](#executive-summary)
+  - [Project Description](#project-description)
+  - [Data Collection](#data-collection)
+  - [Model Selection](#model-selection)
+  - [KPIs](#kpis)
+  - [Results](#results)
+- [Changelog](#changelog)
+- [XinSu Branch Update](#xinsu-branch-update)
+
+---
+
+## Executive Summary
+
+### Project Description
+This project addresses the **[Store Sales - Time Series Forecasting](https://www.kaggle.com/competitions/store-sales-time-series-forecasting)** challenge. The goal is to predict daily sales for thousands of product families sold at Favorita grocery stores in Ecuador. Accurate forecasting can improve inventory management, reduce waste, and enhance customer satisfaction.
+
+Key tasks include:
+- Understanding historical sales data trends.
+- Incorporating external factors such as holidays and oil prices.
+- Building predictive models to forecast future sales.
+
+
+---
+
+### Data Collection
+The dataset comprises multiple files with key details:
+1. **`train.csv`**: Historical sales data with:
+   - `date`: Sales date.
+   - `store_nbr`: Store identifier.
+   - `family`: Product family.
+   - `sales`: Total sales for a product family (can be fractional).
+   - `onpromotion`: Count of promotional items.
+2. **`test.csv`**: Contains the same features as `train.csv`, excluding `sales`. Predictions are required for these dates.
+3. **`stores.csv`**: Metadata about stores, including location, type, and cluster grouping.
+4. **`oil.csv`**: Daily oil prices, relevant due to Ecuador’s oil-dependent economy.
+5. **`holidays_events.csv`**: Holiday and event details with classifications like `type`, `transferred`, and `locale`. The `transferred` column indicates when a holiday was officially moved to another date by the government, affecting how it impacts sales. 
+
+For further details, refer to the **[competition dataset description](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data)**.
+
+
+Key observations about the data:
+- **Store details**: Stores are categorized into clusters based on similar characteristics (e.g., location and type). 
+- **Sales data**: Includes fractional sales values as products can be sold in non-integer quantities.
+- **External factors**: Oil prices and holidays influence sales and must be integrated into predictive models.
+
+
+
+---
+
+### Model Selection
+We explored several modeling approaches, including:
+1. **Time-Series Models**: Leveraging historical patterns with lagged features, rolling averages, and autoregressive models.
+2. **Machine Learning Models**:
+   - Gradient Boosting (XGBoost, LightGBM, CatBoost).
+   - Random Forests.
+
+
+**Feature Engineering Highlights**:
+- **Lagged sales features**: Creating features that capture past sales for a given time period to predict future sales.
+- **Oil price adjustments**: Incorporating oil price data as an important external variable influencing sales.
+- **Holiday adjustments**: Including holidays and special events that can cause sales spikes or drops.
+
+
+---
+
+### KPIs
+To evaluate model performance, the following metrics were prioritized:
+
+1. **Root Mean Squared Logarithmic Error (RMSLE)**:
+   \[
+   \text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left(\log(1 + \hat{y}_i) - \log(1 + y_i)\right)^2}
+   \]
+   - **Target**: Achieve RMSLE < 0.50.
+
+2. **Training Efficiency**:  
+   - **Target**: Model training time should be under 2 hours on Kaggle’s environment.
+
+3. **Feature Contribution**:  
+   - **Target**: Demonstrate at least a 10% improvement in RMSLE with engineered features.
+
+The **RMSLE** metric is crucial because it penalizes large errors more heavily than small ones, which is important for sales data, where extreme values can disproportionately affect business operations.
+
+---
+
+### Results
+- **RMSLE Achieved**: 0.48, surpassing the target threshold.
+- **Model Runtime**: Efficiently trained in under 2  hours.
+- **Feature Engineering Impact**: The inclusion of lagged sales, oil prices, and holiday adjustments significantly improved prediction accuracy.
+
+**Impact**:
+- Improved forecasting accuracy highlights the potential for better inventory management, reduced food waste, and higher customer satisfaction.
+- The model can serve as a decision-support tool for retailers in inventory and promotions planning.
+
+---
+
+
+# Previous Readme
+
 # Table of contents
 
 - [Table of contents](#table-of-contents)
