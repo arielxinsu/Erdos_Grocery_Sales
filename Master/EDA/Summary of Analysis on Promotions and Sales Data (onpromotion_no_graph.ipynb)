@@ -1,0 +1,45 @@
+# Summary of Analysis on Promotions and Sales Data (`onpromotion_no_graph.ipynb`)
+
+## Key Tasks Performed
+
+1. **Correlation Analysis**:
+   - **Reference**: Code block under "Calculate the correlation between 'sales' and 'onpromotion' for each 'family'".
+   - Calculated the correlation between `sales` and `onpromotion` for each `family` using `groupby` and `.corr()`.
+   - Sorted and visualized the correlation data to identify families with the strongest relationship between sales and promotions.
+2. **Impact of Promotions on Sales**:
+   - **Reference**: Code block under "Calculate the average sales for entries with and without promotions".
+   - Computed the average sales for entries with (`onpromotion > 0`) and without promotions (`onpromotion == 0`) across all families.
+   - Calculated the percentage increase in sales due to promotions to quantify their effectiveness.
+3. **Per-Family Promotion Impact**:
+   - **Reference**: Code block under "Calculate average units sold with and without promotions for each 'family' and the percentage increase".
+   - Calculated the average sales with and without promotions for each family.
+   - Computed the percentage increase in sales for each family and visualized this data to identify variations in promotional effectiveness.
+
+---
+
+## Findings
+
+1. **Correlation Insights**:
+   - **Reference**: Results from "Calculate the correlation between 'sales' and 'onpromotion' for each 'family'".
+   - Families with strong positive correlations (e.g., `FAMILY_A`) indicate that promotions significantly boost sales for these categories.
+   - Weak or negative correlations for some families suggest that promotions may not influence sales as much or may require different strategies.
+2. **Overall Promotion Effectiveness**:
+   - **Reference**: Results from "Calculate the average sales for entries with and without promotions".
+   - Promotions lead to a measurable increase in average sales overall, with a percentage increase calculated across all families.
+3. **Per-Family Promotion Effectiveness**:
+   - **Reference**: Results from "Calculate average units sold with and without promotions for each 'family' and the percentage increase".
+   - The impact of promotions varies significantly by family, with families like `FAMILY_B` showing high responsiveness to promotions.
+   - Families with lower percentage increases (e.g., `FAMILY_C`) may require alternative promotional strategies.
+
+---
+
+## Recommendations
+
+1. **Target High-Impact Families**:
+   - Focus promotional efforts on families with strong positive correlations and high percentage increases in sales.
+2. **Analyze Low-Impact Families**:
+   - Conduct further analysis on families with weak or negative correlations to identify potential reasons and improve promotional effectiveness.
+
+---
+
+This detailed summary links each task and finding to its corresponding code or output within the `onpromotion_no_graph.ipynb` file, ensuring traceability and context.
