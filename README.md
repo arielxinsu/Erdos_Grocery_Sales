@@ -49,9 +49,36 @@ Key observations about the data:
 
 ---
 
-### Model Selection
-We explored several modeling approaches, including:
-1. rolling averages...
+### Model Selection and Evaluation
+
+We tested several modeling approaches, including baseline models and more advanced models. The performance was evaluated based on an appropriate score, and the results are as follows:
+
+#### **Baseline Models:**
+1. **Mean by Years for the Same Date**: Score = 0.902  
+   A simple model that predicts the mean value for each date based on historical data from the same date in previous years. It performs well but lacks any predictive power beyond basic historical averages.
+  
+2. **Rolling Average**: Score = 0.46141  
+   A model that calculates the rolling average over a certain number of past data points. It smooths out fluctuations but doesn’t account for any seasonal or complex patterns.
+  
+#### **Advanced Models:**
+3. **Random Forest Regressor**: Score = 0.51442  
+   An ensemble model based on decision trees. It handles non-linearity well and can capture complex relationships in the data, but the score shows it may not fully capture the underlying patterns.
+  
+4. **Prophet Model**: Score = 0.48433  
+   A time-series forecasting model developed by Facebook, specifically designed for handling seasonal data with trends. Although it performs better than some models, its score indicates it might not fit the data well for this task.
+  
+5. **SARIMAX**: Score = 0.47600  
+   A classical time-series model that accounts for seasonality, trends, and residuals. It’s effective in many situations but shows lower performance on this dataset.
+
+---
+
+### Insights:
+- **Mean by Years** provides the highest score (0.902), indicating it is the least accurate model, which is good since a low score indicates better performance.
+- **Rolling Average** scores much lower, showing it has a better fit compared to the mean-based approach, but it still does not capture complex patterns.
+- **Random Forest** and **Prophet** show moderate performance, suggesting that more complex models are still not capturing all aspects of the data as well as they could.
+- **SARIMA** has the lowest score among all models, suggesting it’s the most accurate and better suited to the task at hand.
+
+Overall, the SARIMAX model has performed the best, but you might want to explore further optimization or hybrid approaches to improve accuracy even more.
 
 
 
