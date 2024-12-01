@@ -4,9 +4,8 @@
 - [Executive Summary](#executive-summary)
   - [Project Description](#project-description)
   - [Data Collection](#data-collection)
-  - [Model Selection](#Model-Selection-and-Evaluation)
   - [KPIs](#kpis)
-  - [Results](#results)
+  - [Model Selection and Evaluation](#Model-Selection-and-Evaluation)
   - [Repository structure](#Repository-structure)
 
 ---
@@ -49,6 +48,34 @@ Key observations about the data:
 
 ---
 
+
+**Feature Engineering Highlights**:
+- **Lagged sales features**: Creating features that capture past sales for a given time period to predict future sales.
+- **Oil price adjustments**: Incorporating oil price data as an important external variable influencing sales.
+- **Holiday adjustments**: Including holidays and special events that can cause sales spikes or drops.
+
+
+---
+
+### KPIs
+To evaluate model performance, the following metrics were prioritized:
+
+1. **Root Mean Squared Logarithmic Error (RMSLE)**:
+   \[
+   \text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left(\log(1 + \hat{y}_i) - \log(1 + y_i)\right)^2}
+   \]
+   - **Target**: Achieve RMSLE < 0.50.
+
+2. **Training Efficiency**:  
+   - **Target**: Model training time should be under 2 hours on Kaggle’s environment.
+
+3. **Feature Contribution**:  
+   - **Target**: Demonstrate at least a 10% improvement in RMSLE with engineered features.
+
+The **RMSLE** metric is crucial because it penalizes large errors more heavily than small ones, which is important for sales data, where extreme values can disproportionately affect business operations.
+
+---
+
 ### Model Selection and Evaluation
 
 We tested several modeling approaches, including baseline models and more advanced models. The performance was evaluated based on an appropriate score, and the results are as follows:
@@ -81,37 +108,7 @@ We tested several modeling approaches, including baseline models and more advanc
 Overall, the SARIMAX model has performed the best, but you might want to explore further optimization or hybrid approaches to improve accuracy even more.
 
 
-
-**Feature Engineering Highlights**:
-- **Lagged sales features**: Creating features that capture past sales for a given time period to predict future sales.
-- **Oil price adjustments**: Incorporating oil price data as an important external variable influencing sales.
-- **Holiday adjustments**: Including holidays and special events that can cause sales spikes or drops.
-
-
----
-
-### KPIs
-To evaluate model performance, the following metrics were prioritized:
-
-1. **Root Mean Squared Logarithmic Error (RMSLE)**:
-   \[
-   \text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left(\log(1 + \hat{y}_i) - \log(1 + y_i)\right)^2}
-   \]
-   - **Target**: Achieve RMSLE < 0.50.
-
-2. **Training Efficiency**:  
-   - **Target**: Model training time should be under 2 hours on Kaggle’s environment.
-
-3. **Feature Contribution**:  
-   - **Target**: Demonstrate at least a 10% improvement in RMSLE with engineered features.
-
-The **RMSLE** metric is crucial because it penalizes large errors more heavily than small ones, which is important for sales data, where extreme values can disproportionately affect business operations.
-
----
-
-### Results
-- **RMSLE Achieved**: 0.48, surpassing the target threshold.
-- **Model Runtime**: Efficiently trained in under 2  hours.
+- **Models Runtime**: Efficiently trained in under 2  hours.
 - **Feature Engineering Impact**: The inclusion of lagged sales, oil prices, and holiday adjustments significantly improved prediction accuracy.
 
 **Impact**:
