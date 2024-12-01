@@ -4,7 +4,7 @@
 - [Executive Summary](#executive-summary)
   - [Project Description](#project-description)
   - [Data Collection](#data-collection)
-  - [Model Selection](#model-selection)
+  - [Model Selection](#Model-Selection-and-Evaluation)
   - [KPIs](#kpis)
   - [Results](#results)
   - [Repository structure](#Repository-structure)
