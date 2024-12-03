@@ -61,15 +61,14 @@ Key observations about the data:
 To evaluate model performance, the following metrics were prioritized:
 
 1. **Root Mean Squared Logarithmic Error (RMSLE)**:
-   \[
-   \text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left(\log(1 + \hat{y}_i) - \log(1 + y_i)\right)^2}
-   \]
+  ![Alt text](Visuals/RMSLE.png "RMSLE")
+ 
    - **Target**: Achieve RMSLE < 0.50.
 
-2. **Training Efficiency**:  
+3. **Training Efficiency**:  
    - **Target**: Model training time should be under 2 hours on Kaggle’s environment.
 
-3. **Feature Contribution**:  
+4. **Feature Contribution**:  
    - **Target**: Demonstrate at least a 10% improvement in RMSLE with engineered features.
 
 The **RMSLE** metric is crucial because it penalizes large errors more heavily than small ones, which is important for sales data, where extreme values can disproportionately affect business operations.
