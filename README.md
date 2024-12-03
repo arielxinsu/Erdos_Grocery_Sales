@@ -62,7 +62,7 @@ To evaluate model performance, the following metrics were prioritized:
 
 1. **Root Mean Squared Logarithmic Error (RMSLE)**:
   !<p align="left">
-  <img src="Visuals/RMSLE.png" alt="RMSLE" title="RMSLE" style="max-width:100%;">
+  <img src="Visuals/RMSLE.png" alt="RMSLE" title="RMSLE" style="max-width:75%;">
 </p>
  
    - **Target**: Achieve RMSLE < 0.50.
