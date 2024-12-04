@@ -20,6 +20,7 @@ Key tasks include:
 - Incorporating external factors such as holidays and oil prices.
 - Building predictive models to forecast future sales.
 
+By leveraging a combination of advanced modeling techniques and feature engineering, our final hybrid model secured a position in the top 100 on the Kaggle leaderboard for the Store Sales - Time Series Forecasting competition.
 
 ---
 
@@ -50,7 +51,6 @@ Key observations about the data:
 
 
 **Feature Engineering Highlights**:
-- **Lagged sales features**: Creating features that capture past sales for a given time period to predict future sales.
 - **Oil price adjustments**: Incorporating oil price data as an important external variable influencing sales.
 - **Holiday adjustments**: Including holidays and special events that can cause sales spikes or drops.
 
@@ -98,6 +98,10 @@ We tested several modeling approaches, including baseline models and more advanc
 5. **SARIMAX**: Score = 0.47600  
    A classical time-series model that accounts for seasonality, trends, and residuals. It’s effective in many situations but shows lower performance on this dataset.
 
+#### **Combined Model:**
+6. **⅓ Rolling Average + ⅓ Prophet + ⅓ SARIMAX**: Score = 0.429  
+   A hybrid model combining predictions from Rolling Average, Prophet, and SARIMAX. This approach leverages the strengths of each model, resulting in the best score among all tested methods.
+
 ---
 
 ### Insights:
@@ -106,8 +110,12 @@ We tested several modeling approaches, including baseline models and more advanc
 - **Random Forest** and **Prophet** show moderate performance, suggesting that more complex models are still not capturing all aspects of the data as well as they could.
 - **SARIMA** has the lowest score among all models, suggesting it’s the most accurate and better suited to the task at hand.
 
-Overall, the SARIMAX model has performed the best, but you might want to explore further optimization or hybrid approaches to improve accuracy even more.
 
+#### **Combined Model:**
+The combined approach, which incorporates ⅓ Rolling Average + ⅓ Prophet + ⅓ SARIMAX, not only achieved the best score (0.429) among all tested methods but also secured us a top 100 position in the Kaggle competition leaderboard, showcasing its effectiveness in practical applications. This hybrid model leverages the strengths of each individual model and outperforms all standalone approaches, demonstrating that combining models can enhance accuracy by balancing their limitations.
+
+Overall, the hybrid approach has proven to be the most effective, suggesting that further exploration of ensemble methods or deep learning-based optimizations could yield even better results.
+ 
 
 - **Models Runtime**: Efficiently trained in under 2  hours.
 - **Feature Engineering Impact**: The inclusion of lagged sales, oil prices, and holiday adjustments significantly improved prediction accuracy.
@@ -132,7 +140,8 @@ The repository is organized into the following folders:
   - **EDA**: This folder contains exploratory data analysis notebooks and scripts to understand the data and derive insights.
   - **Models**: This folder stores the trained models, including the baseline models (e.g., Random Forest Regressor) and any other custom models developed for the competition.
   - **Predictions**: This folder contains the output files from the trained models, including predictions submitted to Kaggle and comparison results with the leaderboard metrics.  
- Predictions
+- **Visuals**: Contains graphs and plots generated during exploratory data analysis (EDA) to highlight key insights and trends.
+- **Presentation**: Contains the project presentation file `Grocery_sales_presentation.pdf`, summarizing key findings, insights, and the modeling approach.
 - **README.md**: The project documentation file containing an overview, setup instructions, and other useful information about the project.
 
 ---
